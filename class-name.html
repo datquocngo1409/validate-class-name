@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+    function isClassName(str) {
+      var regexp = /^[CAP]+[0-9]{4}[GHIKLM]+$/;
+      if(regexp.test(str)) return true;
+      return false;
+    }
+
+    var str1 ="C0318G";
+    var str2 = "P0323A";
+    var str3 = "M0318G";
+    document.writeln(isClassName(str1));
+    document.writeln(isClassName(str2));
+    document.writeln(isClassName(str3));
+  </script>
+</body>
+</html>
